@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sushiese</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #000;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .landingContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        overflow-x: hidden;
+        transform: translateY(-70px);
+        padding: 0 20px;
+      }
+
+      .landingHeaderContainer {
+        color: #fff;
+      }
+
+      .landingCtaButton {
+        background-color: #ef5605;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border: none;
+        border-radius: 30px;
+        font-size: medium;
+        transition: all 0.15s;
+      }
+      .landingCtaButton:hover {
+        box-shadow: 3px 3px 40px rgba(205, 222, 109, 0.531);
+      }
+      .landingCtaButton:active {
+        opacity: 0.7;
+      }
+
+      .landingImageContainer {
+        width: 50vw;
+      }
+
+      .landingImageContainer .landingImage {
+        height: 800px;
+        width: 800px;
+        object-fit: contain;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 60px;
+      }
+
+      .logo {
+        color: #e5697d;
+      }
+
+      .navMenu {
+        display: flex;
+        align-items: center;
+        color: #fff;
+      }
+
+      .navMenuItem {
+        list-style: none;
+        margin-right: 10px;
+      }
+
+      .navMenuItem:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        transition: all 0.2s ease-in-out;
+        text-underline-offset: 3px;
+        color: yellow;
+      }
+
+      .menuContainer {
+        height: auto;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        transform: translateY(-150px);
+      }
+
+      .menuTitle {
+        font-style: italic;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid;
+        padding: 10px;
+        width: 1200px;
+      }
+
+      .signUpTitle {
+        color: yellow;
+        text-align: center;
+      }
+
+      /* Add your custom CSS styles here */
+      .signUpContainer {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .inputContainer {
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="number"],
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      .inputRadioContainer,
+      .inputCheckboxContainer {
+        display: flex;
+        align-items: center;
+      }
+      .formSubmitBtn {
+        background-color: #ef5605;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border: none;
+        border-radius: 30px;
+        font-size: medium;
+        transition: all 0.15s;
+      }
+      .formSubmitBtn:hover {
+        box-shadow: 3px 3px 40px rgba(205, 222, 109, 0.531);
+      }
+      .formSubmitBtn:active {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logoContainer">
+        <h1 class="logo">Sushiese</h1>
+      </div>
+      <div class="navMenuContainer">
+        <ul class="navMenu">
+          <li class="navMenuItem">Home</li>
+          <li class="navMenuItem">Menu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="landingContainer">
+      <div class="landingHeaderContainer">
+        <h1 class="landingTitle">Authentic sushi from michelin star chef</h1>
+        <p class="landingDescription">
+          All ingredients sourced from the best parts around the world. Lorem
+          ipsum dolor, sit amet consectetur adipisicing elit. Commodi sit,
+          doloribus iusto eveniet voluptatibus dolores facere voluptas odio,
+          obcaecati exercitationem ex. Soluta veritatis similique eveniet ex
+          cumque adipisci mollitia est!
+        </p>
+        <button class="landingCtaButton">Order now</button>
+      </div>
+      <div class="landingImageContainer">
+        <img
+          src="https://images6.alphacoders.com/331/thumb-1920-331454.jpg"
+          class="landingImage"
+        />
+      </div>
+    </div>
+    <div class="menuContainer">
+      <h1 class="menuTitle">Our Menu</h1>
+      <table>
+        <thead>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Ingredients</th>
+          <th>Chef</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sushi</td>
+            <td>well cooked fish served with fine rice</td>
+            <td>fish, rice, salt, oil and some spices</td>
+            <td>Issu</td>
+            <td>$300</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="signUpContainer">
+      <div class="signUpTitleContainer">
+        <h1 class="signUpTitle">Please signup below</h1>
+      </div>
+      <form action="#">
+        <div class="inputContainer">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
+        <div class="inputContainer">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" />
+        </div>
+        <div class="inputContainer">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="inputContainer">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" />
+        </div>
+        <div class="inputContainer">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="inputContainer">
+          <label for="selectOption">Select Option:</label>
+          <select id="selectOption" name="selectOption">
+            <option>Hello</option>
+            <option>World</option>
+          </select>
+        </div>
+        <div class="inputRadioContainer">
+          <input type="radio" id="male" name="gender" checked />
+          <label for="male">Male</label>
+        </div>
+        <div class="inputRadioContainer">
+          <input type="radio" id="female" name="gender" />
+          <label for="female">Female</label>
+        </div>
+        <div class="inputCheckboxContainer">
+          <input type="checkbox" id="agree" name="agree" />
+          <label for="agree">I agree to terms and conditions</label>
+        </div>
+        <button class="formSubmitBtn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
